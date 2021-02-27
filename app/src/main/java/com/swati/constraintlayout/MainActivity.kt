@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         tv_rp.setOnClickListener(this)
         tv_bc.setOnClickListener(this)
         tv_cc.setOnClickListener(this)
+        tv_chain.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -30,6 +31,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.tv_cc -> {
                 //Center positioning and center constraint demo
                 val intent = Intent(this, CenterConstraintActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.tv_chain -> {
+                //Center positioning and center constraint demo
+                val intent = Intent(this, ChainsActivity::class.java)
                 startActivity(intent)
             }
         }
