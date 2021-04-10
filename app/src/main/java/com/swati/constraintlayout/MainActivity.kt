@@ -38,6 +38,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, ChainsActivity::class.java)
                 startActivity(intent)
             }
+            R.id.tv_helpers -> {
+                //Center positioning and center constraint demo
+                val intent = Intent(this, HelpersActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
